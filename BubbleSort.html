@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [40,21,4,1,8,65];
+  function bubbleSort(arr) {
+    var len = arr.length;
+
+    for (var i = 0; i < len ; i++) {
+      for(var j = 0 ; j < len - i; j++){ // this was missing
+        if (arr[j] > arr[j + 1]) {
+          // swap
+          var temp = arr[j];
+          arr[j] = arr[j+1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+  alert(bubbleSort(arr));
+</script>
+</body>
+</html>

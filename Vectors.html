@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Vector {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+    }
+
+    plus(otherVec) {
+      return new Vector(this.x + otherVec.x, this.y + otherVec.y);
+    }
+
+    minus(otherVec) {
+      return new Vector(this.x - otherVec.x, this.y - otherVec.y);
+    }
+    mult(number){
+      return new Vector(this.x * number, this.y * number);
+    }
+
+    toString() {
+      return `Vec{x: ${this.x}, y: ${this.y}}`;
+    }
+  }
+
+  alert(String(new Vector(1, 2).plus(new Vector(2, 3))));
+
+  alert(String(new Vector(1, 2).minus(new Vector(2, 3))));
+
+  alert(new Vector(3, 4));
+
+  alert(String(new Vector(4,2).mult(5)));
+
+</script>
+</body>
+</html>

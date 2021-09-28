@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let  s = +prompt("ведите число от 1 до 100");
+  while(true){
+
+    if(s<1 || s>100 || !s ) {
+      alert("Ошибка ввода");
+      s = +prompt("ведите число от 1 до 100");}
+    else {
+      var x = prompt("Угадай");}
+    if (x === s) {
+      alert("Угадал");
+      break;
+    } else if (x < s) {
+      alert("Меньше");
+    } else if (x > s) {
+      alert("Больше");
+    } else if (x < 1 || x > 100) {
+      prompt("Ошибка ввода");
+
+    }
+  }
+</script>
+</body>
+</html>
