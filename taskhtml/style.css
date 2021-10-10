@@ -1,0 +1,331 @@
+.landing{
+        display: flex;
+    width: 100%;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+.menu>li{
+    list-style-type: none;
+   }
+.menu{
+    width: 277px;
+    color: #2c2c2c;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 57.2px;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.land{
+    font-family: "Montserrat - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.ing{
+    color: #ffc80a;
+    font-family: "Playfair Display - Black Italic", sans-serif;
+
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.main-content{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+.portfolio{
+    margin-left: 20%;
+    width: 388px;
+    height: 61px;
+    color: #2c2c2c;
+    font-family: Arvo;
+    font-size: 60px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 57.18px;
+    text-align: left;
+}
+.main-text{
+    margin-right: 20% ;
+    width: 184px;
+    height: 71px;
+    color: #9fa3a7;
+    font-family: Arvo;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+}
+.images{
+    max-width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tickets{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.ticketsimg{
+    margin-bottom: 20%;
+}
+.tickets-main{
+    display: flex;
+   justify-content: center;
+   margin-right: 40%;
+
+    color: #9fa3a7;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.tickets-text{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    color: #292929;
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.laptop{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.laptop-main{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+    margin-left: 3.5%;
+    color: #9fa3a7;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.laptop-text{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 17%;
+    color: #292929;
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.megaphone{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.megaphoneimg{
+  margin-top: 15%;
+}
+.megaphone-main{
+    margin-top: 45%;
+    color: #9fa3a7;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.megaphone-text{
+    width: 140px;
+    color: #292929;
+    font-family: Arvo;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.bomb{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.bombimg{
+display: flex;
+    align-content: flex-start;
+    left: 10%
+}
+.bomb-main{
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.bomb-text{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 46.5%;
+
+
+    color: #292929;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.ipad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    margin-top: 3%;
+
+}
+.ipad-main{
+    margin-top: 33%;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.ipad-text{
+    width: 120px;
+
+    color: #292929;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.stop{
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 10%;
+
+}
+.stopimg{
+    margin-top: 25%;
+}
+.stop-main{
+    margin-top: 40%;
+    width: 72px;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.stop-text{
+    width: 120px;
+
+    color: #292929;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-align: left;
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stop:hover {
+    color: #ffffff;
+
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
+.bomb:hover {
+
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
+.laptop:hover {
+
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
+.ipad:hover {
+    
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
+.megaphone:hover {
+
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
+.tickets:hover {
+
+    border-radius: 6px;
+    background-color: #ffc80a;
+}
