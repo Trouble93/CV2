@@ -1,0 +1,314 @@
+.main {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.main-text {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Arvo;
+    letter-spacing: normal;
+    line-height: 57.2px;
+    text-align: center;
+}
+
+.main-text2 {
+    width: 374px;
+    color: #9fa3a7;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+
+
+}
+
+.prices {
+    display: flex;
+    max-width: 880px;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.price {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    border: 1px solid transparent;
+    padding: 25px;
+}
+
+.img-standart {
+    align-content: flex-end;
+}
+
+.standart-name {
+    margin-top: 10%;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Standart" */
+    letter-spacing: 2.88px;
+    line-height: normal;
+}
+
+.standart-text {
+    width: 211px;
+    color: #9fa3a7;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    /* Text style for "T, he deve" */
+
+}
+
+.standart-price {
+    color: #212121;
+    font-family: 'Arvo', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "$" */
+
+}
+
+.standart-but {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15%;
+    /* Text style for "Buy now" */
+
+
+    height: 47px;
+    border-radius: 23px;
+    background-color: #ffc80a;
+    display: none;
+}
+
+.premium-but {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Buy now" */
+    height: 47px;
+    border-radius: 23px;
+    background-color: #ffc80a;
+    display: none;
+    margin-top: 15%;
+}
+
+.luxury-but {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Buy now" */
+
+
+    height: 47px;
+    border-radius: 23px;
+    background-color: #ffc80a;
+    display: none;
+    margin-top: 15%;
+}
+
+.standart:hover {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+
+}
+
+.standart:hover .standart-but {
+    width: 160px;
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    display: block;
+}
+
+.standart:hover {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    display: flex;
+    align-content: center;
+}
+
+.standart:hover .standart-but {
+    width: 160px;
+    border-radius: 30px;
+    border: 1px solid #e8e9ed;
+    display: block;
+}
+
+.luxury:hover {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    display: flex;
+    align-content: center;
+}
+
+.luxury:hover .luxury-but {
+    width: 160px;
+    border-radius: 30px;
+    border: 1px solid #e8e9ed;
+    display: block;
+}
+
+.premium:hover {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    display: flex;
+    align-content: center;
+}
+
+.premium:hover .premium-but {
+    width: 160px;
+    border-radius: 30px;
+    border: 1px solid #e8e9ed;
+    display: block;
+}
+
+/*.premium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    align-content: space-around;
+    padding: 15px;
+
+}
+*/
+
+.premium-name {
+    margin-top: 10%;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+}
+
+.premium-text {
+    width: 211px;
+    color: #9fa3a7;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    /* Text style for "T, he deve" */
+
+}
+
+.premium-price {
+    width: 84px;
+    color: #212121;
+    font-family: 'Arvo', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "$" */
+
+    /* Text style for "3, 9" */
+
+
+}
+
+/*.luxury{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    align-content: space-around;
+    padding: 15px;
+}
+*/
+
+.luxury-name {
+    margin-top: 10%;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.88px;
+}
+
+.luxury-text {
+    width: 218px;
+    color: #9fa3a7;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+.luxury-price {
+    width: 91px;
+    color: #212121;
+    font-family: 'Arvo', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+  
+
+
