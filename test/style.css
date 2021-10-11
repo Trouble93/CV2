@@ -11,11 +11,12 @@
     color: #212121;
     font-size: 36px;
     font-weight: 400;
-    font-family: Arvo;
+    font-family: Arvo, sans-serif;
     letter-spacing: normal;
     line-height: 57.2px;
     text-align: center;
 }
+
 
 .main-text2 {
     width: 374px;
@@ -27,16 +28,14 @@
     letter-spacing: normal;
     line-height: 24px;
     text-align: center;
-
-
 }
+
 
 .prices {
     display: flex;
     max-width: 880px;
     justify-content: space-around;
     margin: 0 auto;
-
 }
 
 .price {
@@ -49,26 +48,24 @@
     padding: 25px;
 }
 
-.img-standart {
+.img-standard {
     align-content: flex-end;
 }
 
-.standart-name {
+.standard-name {
     margin-top: 10%;
     color: #212121;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
-
     text-align: center;
     text-transform: uppercase;
-    /* Text style for "Standart" */
     letter-spacing: 2.88px;
     line-height: normal;
 }
 
-.standart-text {
+.standard-text {
     width: 211px;
     color: #9fa3a7;
     font-family: "Open Sans", sans-serif;
@@ -78,11 +75,9 @@
     letter-spacing: normal;
     line-height: 26px;
     text-align: left;
-    /* Text style for "T, he deve" */
-
 }
 
-.standart-price {
+.standard-price {
     color: #212121;
     font-family: 'Arvo', sans-serif;
     font-size: 60px;
@@ -91,13 +86,11 @@
     letter-spacing: normal;
     line-height: normal;
     text-align: center;
-    /* Text style for "$" */
-
 }
 
-.standart-but {
+.standard-but {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
@@ -106,9 +99,6 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 15%;
-    /* Text style for "Buy now" */
-
-
     height: 47px;
     border-radius: 23px;
     background-color: #ffc80a;
@@ -117,7 +107,7 @@
 
 .premium-but {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
@@ -125,7 +115,6 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    /* Text style for "Buy now" */
     height: 47px;
     border-radius: 23px;
     background-color: #ffc80a;
@@ -135,7 +124,7 @@
 
 .luxury-but {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
@@ -143,87 +132,16 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    /* Text style for "Buy now" */
-
-
     height: 47px;
     border-radius: 23px;
     background-color: #ffc80a;
     display: none;
     margin-top: 15%;
 }
-
-.standart:hover {
-    display: block;
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
-
-}
-
-.standart:hover .standart-but {
-    width: 160px;
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
-    display: block;
-}
-
-.standart:hover {
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
-    display: flex;
-    align-content: center;
-}
-
-.standart:hover .standart-but {
-    width: 160px;
-    border-radius: 30px;
-    border: 1px solid #e8e9ed;
-    display: block;
-}
-
-.luxury:hover {
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
-    display: flex;
-    align-content: center;
-}
-
-.luxury:hover .luxury-but {
-    width: 160px;
-    border-radius: 30px;
-    border: 1px solid #e8e9ed;
-    display: block;
-}
-
-.premium:hover {
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
-    display: flex;
-    align-content: center;
-}
-
-.premium:hover .premium-but {
-    width: 160px;
-    border-radius: 30px;
-    border: 1px solid #e8e9ed;
-    display: block;
-}
-
-/*.premium{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid transparent;
-    align-content: space-around;
-    padding: 15px;
-
-}
-*/
-
 .premium-name {
     margin-top: 10%;
     color: #212121;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
@@ -242,8 +160,6 @@
     letter-spacing: normal;
     line-height: 26px;
     text-align: left;
-    /* Text style for "T, he deve" */
-
 }
 
 .premium-price {
@@ -256,27 +172,12 @@
     letter-spacing: normal;
     line-height: normal;
     text-align: center;
-    /* Text style for "$" */
-
-    /* Text style for "3, 9" */
-
-
 }
-
-/*.luxury{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid transparent;
-    align-content: space-around;
-    padding: 15px;
-}
-*/
 
 .luxury-name {
     margin-top: 10%;
     color: #212121;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
@@ -288,7 +189,7 @@
 .luxury-text {
     width: 218px;
     color: #9fa3a7;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -309,6 +210,321 @@
     text-align: center;
 }
 
-  
+
+@media (max-width: 1024px) {
+    .price {
+                padding: 15px;
+    }
+
+    .main-text {
+        font-size: 28px;
+    }
+
+    .main-text2 {
+        width: 270px;
+        font-size: 10px;
+    }
+
+    .standard-price {
+        display: block;
+        max-width: 120px;
+    }
+
+    .standard-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+    .standard-name {
+        font-size: 10px;
+    }
+
+
+    .premium-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+
+    .premium-name {
+        font-size: 10px;
+    }
+
+
+    .luxury-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+
+    .luxury-name {
+        font-size: 10px;
+    }
+
+
+    /* .standard-but {
+         display: block;
+         height: 47px;
+     }
+     .premium-but {
+         display: block;
+         height: 47px;
+     }
+     .luxury-but {
+         display: block;
+         height: 47px;
+     }*/
+    .standard-price {
+        font-size: 50px;
+    }
+
+    .premium-price {
+        font-size: 50px;
+    }
+
+    .luxury-price {
+        font-size: 50px;
+    }
+
+    .img-standard {
+        width: 130px;
+    }
+
+    .img-premium {
+        width: 130px;
+    }
+
+    .img-luxury {
+        width: 130px;
+    }
+}
+
+@media (max-width: 750px) {
+    .price {
+        padding: 15px;
+    }
+
+    .main-text {
+        font-size: 28px;
+    }
+
+    .main-text2 {
+        font-size: 10px;
+    }
+
+    .standard-price {
+        max-width: 120px;
+    }
+
+    .standard-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+    .standard-name {
+        font-size: 10px;
+    }
+
+
+    .premium-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+
+    .premium-name {
+        font-size: 10px;
+    }
+
+
+    .luxury-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+
+    .luxury-name {
+        font-size: 10px;
+    }
+
+
+    .standard-but {
+        display: block;
+        width: 160px;
+    }
+
+    .premium-but {
+        display: block;
+        width: 160px;
+    }
+
+    .luxury-but {
+        display: block;
+        width: 160px;
+    }
+
+    .standard-price {
+        font-size: 50px;
+    }
+
+    .premium-price {
+        font-size: 50px;
+    }
+
+    .luxury-price {
+        font-size: 50px;
+    }
+
+    .img-standard {
+        width: 130px;
+    }
+
+    .img-premium {
+        width: 130px;
+    }
+
+    .img-luxury {
+        width: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    .price {
+        padding: 15px;
+
+    }
+
+    .main-text {
+        font-size: 28px;
+    }
+
+    .main-text2 {
+        font-size: 10px;
+    }
+
+    .standard-price {
+        display: block;
+
+    }
+
+    .standard-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+    .standard-name {
+        font-size: 10px;
+    }
+
+
+    .premium-text {
+        font-size: 10px;
+        width: 160px;
+    }
+
+
+    .premium-name {
+        font-size: 10px;
+    }
+
+
+    .luxury-text {
+        font-size: 1px;
+        width: 160px;
+    }
+
+
+    .luxury-name {
+        font-size: 10px;
+    }
+
+
+    .standard-but {
+        display: block;
+        height: 47px;
+        width: 160px;
+    }
+
+    .premium-but {
+        display: block;
+        height: 47px;
+        width: 160px;
+    }
+
+    .luxury-but {
+        display: block;
+        height: 47px;
+        width: 160px;
+    }
+
+    .standard-price {
+        font-size: 50px;
+    }
+
+    .premium-price {
+        font-size: 50px;
+    }
+
+    .luxury-price {
+        font-size: 50px;
+    }
+
+    .img-standard {
+        width: 130px;
+    }
+
+    .img-premium {
+        width: 130px;
+    }
+
+    .img-luxury {
+        width: 130px;
+    }
+}
+@media (min-width: 1024px) {
+
+
+    .standard:hover {
+        border-radius: 5px;
+        border: 1px solid #e8e9ed;
+        display: flex;
+        align-content: center;
+    }
+
+    .standard:hover .standard-but {
+        width: 160px;
+        border-radius: 30px;
+        border: 1px solid #e8e9ed;
+        display: block;
+    }
+
+    .luxury:hover {
+        border-radius: 5px;
+        border: 1px solid #e8e9ed;
+        display: flex;
+        align-content: center;
+    }
+
+    .luxury:hover .luxury-but {
+        width: 160px;
+        border-radius: 30px;
+        border: 1px solid #e8e9ed;
+        display: block;
+    }
+
+    .premium:hover {
+        border-radius: 5px;
+        border: 1px solid #e8e9ed;
+        display: flex;
+        align-content: center;
+    }
+
+    .premium:hover .premium-but {
+        width: 160px;
+        border-radius: 30px;
+        border: 1px solid #e8e9ed;
+        display: block;
+    }
+}
 
 
