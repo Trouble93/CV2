@@ -1,0 +1,417 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
+header{
+    margin: 0 auto;
+    max-width: 1119px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main{
+    color: #292929;
+    font-family: Arvo, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.search{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    margin-top: 35px;
+    color: #212121;
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search:after{
+    padding-left: 13px;
+    width: 15px;
+    height: 15px;
+    margin-right: auto;
+    content: url('img/search.svg');
+}
+.shuffle{
+    display: flex;
+
+    margin-top: 35px;
+    color: #292929;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.shuffle:before{
+    padding-right: 27px;
+    width: 16px;
+    height: 15px;
+    content: url('img/shuffle.svg');
+}
+.container{
+    margin: 72px auto;
+    max-width: 1120px;
+
+    width: 100%;
+}
+.building{
+    grid-area: building;
+    display: flex;
+
+    flex-direction: column;
+
+}
+.stadium{
+
+    grid-area: stadium;
+    display: flex;
+    flex-direction: column;
+
+}
+.winter{
+    grid-area: winter;
+    display: flex;
+    flex-direction: column;
+
+}
+.windows{
+    grid-area: windows;
+    display: flex;
+    flex-direction: column;
+
+}
+.mountains{
+    grid-area: mountains;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.everest{
+    grid-area: everest;
+     display: flex;
+    flex-direction: column;
+
+}
+.icon{
+    border-radius: 6px;
+    max-width: 360px;
+    background-color: #f7f8f9;
+    grid-area: icon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.river{
+    grid-area: river;
+    display: flex;
+    flex-direction: column;
+
+}
+.winter-text{
+    color: #ffffff;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+}
+.block{
+    grid-gap: 20px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+"building stadium winter"
+"windows mountains mountains"
+"everest icon river";}
+.photo{
+    border-radius:  6px 6px 0 0;
+}
+.main-text{
+    color: #212121;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+}
+.text{
+    max-width: 242px;
+    color: #9fa3a7;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+}
+.text5{
+    max-width: 592px;
+    color: #9fa3a7;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+}
+.text-bg{
+    display: flex;
+    padding-left: 25px;
+    flex-direction: column;
+    border-radius: 0 0 6px 6px;
+    background-color: #f7f8f9;
+}
+.text-bl{
+    display: flex;
+    padding-left: 25px;
+    flex-direction: column;
+    background-color: #292929;
+    border-radius: 0 0 6px 6px;
+}
+.text-y{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    background-color: #ffc80a;
+    border-radius: 0 0 6px 6px;
+    }
+.windows-main-text{
+    color: #ffffff;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.mountains-text{
+    display: flex;
+    max-height: 221px;
+    align-self: flex-start;
+    margin-left: 70px;
+    color: #212121;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    }
+.windows-text{
+    max-width: 242px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+.main-text-n{
+    display: flex;
+
+    max-width: 210px;
+    color: #212121;
+    font-family: Arvo, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+    background: url("img/Icon.svg")  no-repeat;
+}
+.icon-text{
+    color: #9fa3a7;
+    font-family: Arvo,sans-serif;
+    font-size: 15px;
+
+    font-style: italic;
+    letter-spacing: normal;
+    margin-top: 25px;
+    text-align: left;
+    padding-right: 20px;
+    margin-left: auto;
+}
+
+.bottom-part{
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+.bottom-part-w{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 280px;
+    width: 100%;
+
+}
+.bottom-part-m{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+.date-w{
+    display: flex;
+    margin-top: 35px;
+    margin-right: auto;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.date-w:before{
+    margin-right: 8px;
+
+    content: url('img/clockw.svg');
+}
+.date-m{
+    display: flex;
+    margin-top: 35px;
+    margin-right: auto;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.date-m:before{
+    margin-right: 8px;
+
+    content: url('img/clock.svg');
+}
+
+
+.date{
+    display: flex;
+    margin-top: 35px;
+    margin-right: auto;
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.date:before{
+    margin-right: 8px;
+    content: url('img/clock.svg');
+}
+.views-w{
+    display: flex;
+    margin-top: 35px;
+
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.views-w:before{
+    margin-right: 8px;
+
+    content: url('img/Eyew.svg');
+}
+.views{
+    display: flex;
+    margin-top: 35px;
+
+    color: #9fa3a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+}
+.views:before{
+    margin-right: 8px;
+
+    content: url('img/Eye.svg');
+}.views-m{
+     display: flex;
+     margin-top: 35px;
+
+     color: #9fa3a7;
+     font-family: Montserrat, sans-serif;
+     font-size: 10px;
+     font-weight: 700;
+     font-style: normal;
+     letter-spacing: normal;
+     line-height: normal;
+     text-align: left;
+     text-transform: uppercase;
+ }
+.views-m:before{
+    margin-right: 8px;
+
+    content: url('img/Eye.svg');
+}
+
