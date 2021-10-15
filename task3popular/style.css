@@ -254,6 +254,7 @@ header{
 }
 
 .bottom-part{
+    margin-top: auto;
     max-width: 280px;
     width: 100%;
     display: flex;
