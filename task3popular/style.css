@@ -511,8 +511,10 @@ header{
         max-width: 360px;
     }
     .icon{
-        margin: 0 auto;
-        max-width: 360px;
+
+        width: 100%;
+
+        max-width: 420px;
     }
     .winter{
         max-width: 360px;
