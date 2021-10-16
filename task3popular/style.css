@@ -415,4 +415,116 @@ header{
 
     content: url('img/Eye.svg');
 }
+@media (max-width: 1024px){
+
+.block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+'building  stadium'
+'winter windows'
+'mountains mountains'
+'everest icon'
+'river -' ;
+}
+.bottom-part{
+    max-width: 400px;
+}
+    .bottom-part-w{
+        max-width: 400px;
+    }
+    .bottom-part-m{
+        max-width: 940px;
+    }
+}
+@media (max-width: 750px){
+    header{
+        max-width: 650px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .building{
+
+        max-width: 360px;
+    }
+    .windows{
+        max-width: 360px;
+    }
+    .mountains{
+        max-width: 360px;
+    }
+    .everest{
+        max-width: 360px;
+    }
+    .stadium{
+        max-width: 360px;
+    }
+    .block{
+        padding-right: 25px;
+        display: grid;
+    grid-template-columns:  1fr;
+    grid-template-areas:
+'building '
+'stadium '
+'winter '
+'windows '
+'mountains'
+'everest '
+'icon '
+'river ' ;
+}
+    .bottom-part{
+        max-width: 600px;
+    }
+    .bottom-part-w{
+        max-width: 600px;
+    }
+    .bottom-part-m{
+        max-width: 600px;
+    }
+}
+@media (max-width: 450px) {
+    .block{
+        display: flex;
+        flex-direction: column;
+       align-items: flex-end;
+    }
+    header{
+        max-width: 360px;
+    }
+.building{
+
+    max-width: 360px;
+}
+    .windows{
+        max-width: 360px;
+    }
+    .mountains{
+        max-width: 360px;
+    }
+    .everest{
+        max-width: 360px;
+    }
+    .stadium{
+        max-width: 360px;
+    }
+    .icon{
+        margin: 0 auto;
+        max-width: 360px;
+    }
+    .winter{
+        max-width: 360px;
+    }
+    .bottom-part{
+        max-width: 280px;
+    }
+    .bottom-part-w{
+        max-width: 280px;
+    }
+    .bottom-part-m{
+        max-width: 280px;
+    }
+}
 
