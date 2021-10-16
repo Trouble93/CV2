@@ -19,6 +19,7 @@ header{
     text-align: left;
 }
 .search{
+    margin-right: 18px;
     display: flex;
     align-content: space-between;
     justify-content: space-around;
@@ -33,7 +34,7 @@ header{
     text-transform: uppercase;
 }
 .search:after{
-    padding-left: 13px;
+    padding-left: 18px;
     width: 15px;
     height: 15px;
     margin-right: auto;
@@ -492,6 +493,9 @@ header{
        align-items: flex-end;
     }
     header{
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
         max-width: 360px;
     }
 .building{
@@ -527,6 +531,10 @@ header{
     }
     .bottom-part-m{
         max-width: 280px;
+    }
+    .main{
+        font-size: 26px;
+        margin-top: 25px;
     }
 }
 
