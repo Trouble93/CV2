@@ -55,7 +55,7 @@ header{
     text-transform: uppercase;
 }
 .shuffle:before{
-    padding-right: 27px;
+    padding-right: 32px;
     width: 16px;
     height: 15px;
     content: url('img/shuffle.svg');
@@ -101,7 +101,7 @@ header{
 }
 .everest{
     grid-area: everest;
-     display: flex;
+    display: flex;
     flex-direction: column;
 
 }
@@ -114,6 +114,9 @@ header{
     flex-direction: column;
     align-items: center;
 
+}
+.image{
+    display: flex;
 }
 .river{
     grid-area: river;
@@ -141,6 +144,7 @@ header{
 "everest icon river";}
 .photo{
     border-radius:  6px 6px 0 0;
+    object-fit: cover;
 }
 .main-text{
     color: #212121;
@@ -154,6 +158,7 @@ header{
 }
 .text{
     max-width: 242px;
+    line-height: 26px;
     color: #9fa3a7;
     font-family: "Open Sans",sans-serif;
     font-size: 14px;
@@ -164,6 +169,7 @@ header{
 
 }
 .text5{
+    line-height: 26px;
     max-width: 592px;
     color: #9fa3a7;
     font-family: "Open Sans",sans-serif;
@@ -175,6 +181,7 @@ header{
     text-align: left;
 }
 .text-bg{
+    padding-right: 25px;
     display: flex;
     padding-left: 25px;
     flex-direction: column;
@@ -182,6 +189,8 @@ header{
     background-color: #f7f8f9;
 }
 .text-bl{
+    padding-right: 25px;
+    line-height: 26px;
     display: flex;
     padding-left: 25px;
     flex-direction: column;
@@ -189,12 +198,14 @@ header{
     border-radius: 0 0 6px 6px;
 }
 .text-y{
+    line-height: 26px;
+    padding-right: 25px;
     display: flex;
     flex-direction: column;
     padding-left: 25px;
     background-color: #ffc80a;
     border-radius: 0 0 6px 6px;
-    }
+}
 .windows-main-text{
     color: #ffffff;
     font-family: Arvo, sans-serif;
@@ -216,7 +227,7 @@ header{
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
-    }
+}
 .windows-text{
     max-width: 242px;
     color: #ffffff;
@@ -230,7 +241,7 @@ header{
 .main-text-n{
     display: flex;
 
-    max-width: 210px;
+    max-width: 220px;
     color: #212121;
     font-family: Arvo, sans-serif;
     font-size: 36px;
@@ -238,7 +249,7 @@ header{
     font-style: normal;
     letter-spacing: normal;
 
-    text-align: left;
+    text-align: center;
     background: url("img/Icon.svg")  no-repeat;
 }
 .icon-text{
@@ -250,13 +261,16 @@ header{
     letter-spacing: normal;
     margin-top: 25px;
     text-align: left;
-    padding-right: 20px;
+    padding-right: 30px;
     margin-left: auto;
 }
 
 .bottom-part{
+
+
+    padding-right: 25px;
     margin-top: auto;
-    max-width: 280px;
+
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -271,8 +285,11 @@ header{
     text-transform: uppercase;
 }
 .bottom-part-w{
+
+    padding-right: 25px;
     display: flex;
     flex-direction: row;
+
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 10px;
@@ -282,13 +299,20 @@ header{
 
     text-align: center;
     text-transform: uppercase;
-    max-width: 280px;
+
     width: 100%;
 
 }
-.bottom-part-m{
-    max-width: 600px;
+.icon-bp{
     width: 100%;
+    padding-left: 24px;
+    padding-right: 25px;
+}
+.bottom-part-m{
+
+    padding-right: 25px;
+
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -304,6 +328,7 @@ header{
 }
 .date-w{
     display: flex;
+    align-items: center;
     margin-top: 35px;
     margin-right: auto;
     color: #ffffff;
@@ -324,6 +349,7 @@ header{
 .date-m{
     display: flex;
     margin-top: 35px;
+    align-items: center;
     margin-right: auto;
     color: #9fa3a7;
     font-family: Montserrat, sans-serif;
@@ -343,7 +369,11 @@ header{
 
 
 .date{
+
+
     display: flex;
+
+    align-items: center;
     margin-top: 35px;
     margin-right: auto;
     color: #9fa3a7;
@@ -363,7 +393,7 @@ header{
 .views-w{
     display: flex;
     margin-top: 35px;
-
+    align-items: center;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 10px;
@@ -376,13 +406,13 @@ header{
 }
 .views-w:before{
     margin-right: 8px;
-
+    align-items: center;
     content: url('img/Eyew.svg');
 }
 .views{
     display: flex;
     margin-top: 35px;
-
+    align-items: center;
     color: #9fa3a7;
     font-family: Montserrat, sans-serif;
     font-size: 10px;
@@ -416,21 +446,79 @@ header{
 
     content: url('img/Eye.svg');
 }
-@media (max-width: 1024px){
+@media (max-width: 1150px){
+    .building{
+        max-width: 330px
+    }
+    .stadium{
+        max-width: 330px
+    }
+    .winter{
+        max-width: 330px
+    }
+    .windows{
+        max-width: 330px
+    }
+    .image{
+        height: 241px;
+        max-width: 720px;
+    }
+    .mountains{
+        max-width: 720px
 
-.block{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
+
+    }
+    .everest{
+        max-width: 330px
+    }
+    .icon{
+        max-width: 330px
+    }
+    .river{
+        max-width: 330px
+    }
+}
+@media (max-width: 1024px){
+    .building{
+        max-width: 360px;
+    }
+    .stadium{
+        max-width: 360px;
+    }
+    .winter{
+        max-width: 360px;
+    }
+    .windows{
+        max-width: 360px;
+    }
+    .mountains{
+        max-width: 740px;
+
+
+    }
+    .everest{
+        max-width: 360px;
+    }
+    .icon{
+        max-width: 360px;
+    }
+    .river{
+        max-width: 360px;
+    }
+
+    .block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
 'building  stadium'
 'winter windows'
 'mountains mountains'
 'everest icon'
 'river -' ;
-}
-.bottom-part{
-    max-width: 400px;
-}
+    }
+    .bottom-part{
+        max-width: 400px;
+    }
     .bottom-part-w{
         max-width: 400px;
     }
@@ -439,6 +527,22 @@ header{
     }
 }
 @media (max-width: 750px){
+    .photo{
+        width: 100%;
+        object-fit: cover;
+    }
+    .text-bg{
+        display: flex;
+        align-items: center;
+    }
+    .text-bl{
+        display: flex;
+        align-items: center;
+    }
+    .text-y{
+        display: flex;
+        align-items: center;
+    }
     header{
         max-width: 650px;
     }
@@ -454,7 +558,9 @@ header{
         max-width: 360px;
     }
     .mountains{
+        width: 100%;
         max-width: 360px;
+      
     }
     .everest{
         max-width: 360px;
@@ -463,10 +569,10 @@ header{
         max-width: 360px;
     }
     .block{
-        padding-right: 25px;
+
         display: grid;
-    grid-template-columns:  1fr;
-    grid-template-areas:
+        grid-template-columns:  1fr;
+        grid-template-areas:
 'building '
 'stadium '
 'winter '
@@ -475,66 +581,157 @@ header{
 'everest '
 'icon '
 'river ' ;
-}
+    }
     .bottom-part{
-        max-width: 600px;
+        max-width: 320px;
     }
     .bottom-part-w{
-        max-width: 600px;
+        max-width: 320px;
     }
     .bottom-part-m{
-        max-width: 600px;
+     width: 100%;
+        padding-left: 10px;
+        padding-right: 35px;
+    }
+    .icon-bp{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media (max-width: 450px) {
-    .block{
+    .block {
         display: flex;
         flex-direction: column;
-       align-items: flex-end;
+        align-items: flex-end;
     }
-    header{
+    .icon-bp{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header {
         margin-left: 20px;
         display: flex;
         justify-content: space-around;
         max-width: 360px;
     }
-.building{
 
-    max-width: 360px;
-}
-    .windows{
-        max-width: 360px;
-    }
-    .mountains{
-        max-width: 360px;
-    }
-    .everest{
-        max-width: 360px;
-    }
-    .stadium{
-        max-width: 360px;
-    }
-    .icon{
+    .building {
 
+        max-width: 360px;
+    }
+
+    .windows {
+        max-width: 360px;
+    }
+
+    .mountains {
+        display: flex;
+        max-width: 360px;
+    }
+
+    .everest {
+        max-width: 360px;
+    }
+
+    .stadium {
+        max-width: 360px;
+    }
+
+    .icon {
         width: 100%;
-
         max-width: 420px;
     }
-    .winter{
+    .winter {
         max-width: 360px;
     }
-    .bottom-part{
-        max-width: 280px;
+    .bottom-part {
+        width: 100%
     }
-    .bottom-part-w{
-        max-width: 280px;
+
+    .bottom-part-w {
+        width: 100%
     }
-    .bottom-part-m{
-        max-width: 280px;
+
+    .bottom-part-m {
+     width: 100%
     }
-    .main{
+
+    .main {
         font-size: 26px;
         margin-top: 25px;
     }
 }
+    @media (max-width: 320px) {
 
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 50px;
+        }
+        .icon-bp{
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 25px;
+        }
+        header {
+            margin-left: 80px;
+            display: flex;
+            justify-content: space-around;
+            max-width: 150px;
+        }
+
+        .building {
+
+            max-width: 200px;
+        }
+
+        .windows {
+            max-width: 200px;
+        }
+
+        .mountains {
+
+            max-width: 200px;
+        }
+
+        .everest {
+            max-width: 200px;
+        }
+
+        .stadium {
+            max-width: 200px;
+        }
+
+        .icon {
+
+            width: 100%;
+
+            max-width: 200px;
+        }
+
+        .winter {
+            max-width: 200px;
+        }
+
+        .river {
+            max-width: 200px;
+        }
+
+        .main {
+            font-size: 20px;
+        }
+
+        .search {
+            font-size: 10px;
+        }
+
+        .shuffle {
+            font-size: 10px;
+        }
+        .bottom-part-m{
+            padding-right: 25px;
+            padding-left: 0;
+        }
+    }

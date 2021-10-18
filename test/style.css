@@ -1,3 +1,7 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
+
 .main {
     display: flex;
     max-width: 1440px;
@@ -40,10 +44,8 @@
 
 .price {
     display: flex;
-    max-width: 320px;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
     border: 1px solid transparent;
     padding: 25px;
 }
@@ -138,6 +140,7 @@
     display: none;
     margin-top: 15%;
 }
+
 .premium-name {
     margin-top: 10%;
     color: #212121;
@@ -151,7 +154,7 @@
 }
 
 .premium-text {
-    width: 211px;
+    width: 218px;
     color: #9fa3a7;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -159,7 +162,7 @@
     font-style: normal;
     letter-spacing: normal;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
 }
 
 .premium-price {
@@ -199,6 +202,7 @@
 }
 
 .luxury-price {
+    align-content: center;
     width: 91px;
     color: #212121;
     font-family: 'Arvo', sans-serif;
@@ -213,7 +217,7 @@
 
 @media (max-width: 1024px) {
     .price {
-                padding: 15px;
+        padding: 15px;
     }
 
     .main-text {
@@ -223,6 +227,7 @@
     .main-text2 {
         width: 270px;
         font-size: 10px;
+        line-height: 20px;
     }
 
     .standard-price {
@@ -233,6 +238,8 @@
     .standard-text {
         font-size: 10px;
         width: 160px;
+        line-height: 20px;
+        text-align: center;
     }
 
     .standard-name {
@@ -243,6 +250,7 @@
     .premium-text {
         font-size: 10px;
         width: 160px;
+        line-height: 20px;
     }
 
 
@@ -254,6 +262,7 @@
     .luxury-text {
         font-size: 10px;
         width: 160px;
+        line-height: 20px;
     }
 
 
@@ -261,19 +270,6 @@
         font-size: 10px;
     }
 
-
-    /* .standard-but {
-         display: block;
-         height: 47px;
-     }
-     .premium-but {
-         display: block;
-         height: 47px;
-     }
-     .luxury-but {
-         display: block;
-         height: 47px;
-     }*/
     .standard-price {
         font-size: 50px;
     }
@@ -296,20 +292,44 @@
 
     .img-luxury {
         width: 130px;
+    }
+    .standard-but {
+        margin-top: 5%;
+        display: block;
+        height: 47px;
+        width: 160px;
+        border: solid 1px #ffc80a;
+    }
+
+    .premium-but {
+        margin-top: 5%;
+        display: block;
+        height: 47px;
+        width: 160px;
+        border: solid 1px #ffc80a;
+    }
+
+    .luxury-but {
+        margin-top: 5%;
+        display: block;
+        height: 47px;
+        width: 160px;
+        border: solid 1px #ffc80a;
     }
 }
 
 @media (max-width: 750px) {
     .price {
-        padding: 15px;
+        padding: 10px;
     }
 
     .main-text {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .main-text2 {
         font-size: 10px;
+        line-height: 17px;
     }
 
     .standard-price {
@@ -319,6 +339,8 @@
     .standard-text {
         font-size: 10px;
         width: 160px;
+        line-height: 17px;
+
     }
 
     .standard-name {
@@ -329,6 +351,7 @@
     .premium-text {
         font-size: 10px;
         width: 160px;
+        line-height: 17px;
     }
 
 
@@ -340,6 +363,7 @@
     .luxury-text {
         font-size: 10px;
         width: 160px;
+        line-height: 17px;
     }
 
 
@@ -351,28 +375,31 @@
     .standard-but {
         display: block;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .premium-but {
         display: block;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .luxury-but {
         display: block;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .standard-price {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .premium-price {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .luxury-price {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .img-standard {
@@ -388,14 +415,17 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .price {
         padding: 15px;
-
+        flex-wrap: wrap;
+        border-top: solid 1px black;
     }
-
+    .price:last-child{
+        border-bottom: solid 1px black;
+    }
     .main-text {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .main-text2 {
@@ -403,8 +433,7 @@
     }
 
     .standard-price {
-        display: block;
-
+          display: block;
     }
 
     .standard-text {
@@ -429,7 +458,7 @@
 
 
     .luxury-text {
-        font-size: 1px;
+        font-size: 10px;
         width: 160px;
     }
 
@@ -438,35 +467,40 @@
         font-size: 10px;
     }
 
-
     .standard-but {
+        margin-top: 5%;
         display: block;
         height: 47px;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .premium-but {
+        margin-top: 5%;
         display: block;
         height: 47px;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .luxury-but {
+        margin-top: 5%;
         display: block;
         height: 47px;
         width: 160px;
+        border: solid 1px #ffc80a;
     }
 
     .standard-price {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .premium-price {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .luxury-price {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .img-standard {
@@ -480,7 +514,14 @@
     .img-luxury {
         width: 130px;
     }
+
+    .prices {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       }
 }
+
 @media (min-width: 1024px) {
 
 
@@ -525,6 +566,7 @@
         border: 1px solid #e8e9ed;
         display: block;
     }
+
 }
 
 
