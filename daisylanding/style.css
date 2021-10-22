@@ -1,0 +1,2269 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto;
+}
+
+.main {
+    display: flex;
+    z-index: 3;
+}
+
+.menu {
+    cursor: pointer;
+    width: 422px;
+    height: 11px;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    z-index: 3;
+
+}
+
+.menu1 {
+    position: relative;
+    transition: 0.3s linear !important;
+
+    font-style: normal;
+    line-height: normal;
+}
+
+.menu1:after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #fc635e;
+    bottom: -13px;
+    left: 0;
+    transition: 0.3s linear !important;
+}
+
+.menu1:hover:after {
+    opacity: 1;
+}
+
+.menu1:hover {
+    color: #fc635e;
+}
+
+.clients {
+    display: flex;
+    margin: auto;
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.clients:before {
+    display: flex;
+    content: url("img/line.svg");
+    width: 107px;
+    height: 8px;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.clients2 {
+    margin-left: 10px;
+    display: flex;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.clients2::after {
+    display: flex;
+    content: url("img/line.svg");
+    width: 107px;
+    height: 8px;
+    align-items: center;
+    margin-left: 11px;
+}
+
+.button1 {
+    cursor: pointer;
+    margin-top: 48px;
+    display: flex;
+    width: 205px;
+    height: 56px;
+    border-radius: 8px;
+    color: #fc635e;
+    border: 2px solid #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    z-index: 3;
+    overflow: hidden;
+    background-color: Transparent;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.button1:hover {
+   background: white;
+}
+
+.button1::after {
+    pointer-events: none;
+    display: flex;
+    position: absolute;
+    content: url("img/mouse.svg");
+    width: 47px;
+    height: 32px;
+    margin-left: 280px;
+    z-index: 4;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 774px;
+    line-height: 36px;
+    background-image: url(img/Слой_17.svg);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
+.text {
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    z-index: 3;
+}
+
+.bg {
+    background: #181818;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.slider {
+    bottom: 3%;
+    position: absolute;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider.svg) no-repeat;
+    z-index: 3;
+    align-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .bg {
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bg {
+        width: 100%;
+    }
+
+    .container {
+
+        width: 100%;
+    }
+
+    .main-content {
+
+        width: 100%;
+    }
+
+    .clients {
+        font-size: 40px;
+    }
+
+    .clients2::after {
+        width: 90px;
+        height: 6px;
+        align-items: center;
+        margin-left: 11px;
+    }
+
+    .clients2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .main-content {
+
+        width: 100%;
+    }
+
+    .menu {
+        font-size: 14px;
+        gap: 15px;
+    }
+
+    .clients {
+        font-size: 30px;
+    }
+
+    .clients2 {
+        font-size: 30px;
+    }
+
+    .clients2::after {
+
+        display: none;
+    }
+
+    .clients::before {
+
+        display: none;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .button1 {
+        width: 185px;
+        height: 46px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu1:hover:after {
+        display: none;
+    }
+
+    .container {
+        left: 35%;
+        max-width: 300px;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .button1::after {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    header {
+        padding: 0 10px;
+    }
+
+    .clients {
+        font-size: 24px;
+    }
+
+    .clients2 {
+        font-size: 24px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+
+        left: 50%;
+        max-width: 400px;
+        gap: 1px;
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    li:hover:after {
+        opacity: 0;
+    }
+
+    .menu {
+        margin-top: 40px;
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        height: 68px;
+        width: 139px;
+    }
+
+    .button1::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu {
+        margin-left: 40px;
+    }
+}
+
+.block2 {
+    position: relative;
+    margin-top: 40px;
+}
+
+.main-content-b2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-b2 {
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-b2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+    left: 0;
+}
+
+
+.receive {
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-b2 {
+    max-width: 505px;
+    color: #adadad;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+.services-blocks {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 81px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.blocks-main {
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blocks-main:after {
+    max-width: 59px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.blocks-text {
+    max-width: 203px;
+    color: #adadad;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: center;
+}
+
+.clients-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-b2 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro - Thin';
+    src: local('PF Encore Sans Pro Thin'), local('PF-Encore-Sans-Pro-Thin'),
+    url('fonts2/PFEncoreSansPro-Thin.woff2') format('woff2'),
+    url('fonts2/PFEncoreSansPro-Thin.woff') format('woff'),
+    url('fonts2/PFEncoreSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro Bold';
+    src: local('PF Encore Sans Pro Bold'), local('PF-Encore-Sans-Pro-Bold'),
+    url('fonts/PFEncoreSansPro-Bold.woff2') format('woff2'),
+    url('fonts/PFEncoreSansPro-Bold.woff') format('woff'),
+    url('fonts/PFEncoreSansPro-Bold.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro Regular';
+    src: local('PF Encore Sans Pro Regular'), local('PF-Encore-Sans-Pro-Regular'),
+    url('fonts/PFEncoreSansPro-Regular.woff2') format('woff2'),
+    url('fonts/PFEncoreSansPro-Regular.woff') format('woff'),
+    url('fonts/PFEncoreSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro Medium';
+    src: local('PF Encore Sans Pro Medium'), local('PF-Encore-Sans-Pro-Medium'),
+    url('fonts/PFEncoreSansPro-Medium.woff2') format('woff2'),
+    url('fonts/PFEncoreSansPro-Medium.woff') format('woff'),
+    url('fonts/PFEncoreSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (max-width: 850px) {
+    .services-blocks {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clients-img {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .main-b2 {
+        font-size: 20px;
+    }
+
+    .receive {
+        font-size: 20px;
+    }
+
+    .text-b2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .slider-b2 {
+        left: 47%;
+    }
+}
+
+.main-b3 {
+    display: flex;
+    flex-direction: row;
+
+    z-index: 5;
+}
+
+.main-content-b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 576px;
+    line-height: 36px;
+    background-image: url(img/Слой_18.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+    opacity: 1;
+}
+
+.bg-b3 {
+    background: #131313;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 576px;
+    z-index: 0;
+}
+
+.main-content-b3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.border {
+    opacity: 0.1;
+    border: 8px solid #ffffff;
+
+    z-index: 4;
+    width: 940px;
+    height: 384px;
+    position: absolute;
+
+}
+
+.button2-b3 {
+    cursor: pointer;
+    margin-top: 51px;
+    display: flex;
+    width: 205px;
+    height: 56px;
+    border-radius: 8px;
+    color: #fc635e;
+    border: 2px solid #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    z-index: 5;
+    background-color: Transparent;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+
+.expand {
+    display: flex;
+    margin: auto;
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.business {
+    margin-left: 10px;
+    display: flex;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.slider-b3 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider.svg) no-repeat;
+}
+
+.button2-b3:hover {
+        background: white;
+}
+
+@media (max-width: 950px) {
+    .border {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-b3 {
+        padding: 10px;
+    }
+
+    .expand {
+        font-size: 32px;
+    }
+
+    .business {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .main-b3 {
+        flex-direction: column;
+    }
+}
+
+.main-b4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-b4 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+
+}
+
+.our {
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.process {
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.main-content-b4 {
+    position: relative;
+    margin-top: 51px;
+}
+
+.main-content-b4:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+    left: 0;
+}
+
+.text-b4 {
+    max-width: 504px;
+    color: #adadad;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+}
+
+.complex-photo {
+    margin-top: 57px;
+    margin-bottom: 100px;
+}
+
+.block4 {
+    padding: 0 15px;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .complex-photo {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.main-b5 {
+    padding-top: 60px;
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wedo {
+    margin-left: 10px;
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-content-b5 {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.block5 {
+    padding: 0 15px;
+    position: relative;
+    height: 576px;
+    background-color: #f2f2f2;
+}
+
+.main-b5 {
+
+}
+
+@font-face {
+    font-family: 'PF Encore Sans Pro Light';
+    src: local('PF Encore Sans Pro Light'), local('PF-Encore-Sans-Pro-Light'),
+    url('fonts/PFEncoreSansPro-Light.woff2') format('woff2'),
+    url('fonts/PFEncoreSansPro-Light.woff') format('woff'),
+    url('fonts/PFEncoreSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.text-b5 {
+    max-width: 396px;
+    color: #9e9898;
+    font-family: "PF Encore Sans Pro - Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+}
+
+.landing-pages {
+    display: flex;
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+    align-items: end;
+}
+
+.landing-pages::before {
+    width: 10px;
+    height: 35px;
+    margin-right: 8px;
+    display: flex;
+    content: url('img/Прямоугольник_7.svg');
+
+}
+
+.button-b5 {
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #fc635e;
+    color: #f2f2f2;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    width: 167px;
+    height: 44px;
+    background-color: #fc635e;
+    transition: 0.3s linear;
+}
+
+.button-b5:hover {
+    color: #fc635e;
+    background: white;
+}
+
+.devices {
+    padding: 0 15px;
+    margin-left: 42px;
+}
+
+.slider-b5 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+.main-b5:after {
+    max-width: 238px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1000px) {
+    .main-content-b5 {
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .devices {
+        justify-content: center;
+        max-width: 506px;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .devices img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .block5 {
+        height: 100%;
+    }
+
+    .slider-b5 {
+        bottom: 0;
+    }
+
+    .button-b5 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+.main-content-b6 {
+    padding: 0 15px;
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.block6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    height: 578px;
+}
+
+.text-b6 {
+    max-width: 396px;
+    color: #9e9898;
+    font-family: "PF Encore Sans Pro - Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: right;
+}
+
+.adversting {
+    display: flex;
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+    align-items: end;
+    justify-content: end;
+}
+
+.adversting::after {
+    width: 10px;
+    height: 35px;
+    margin-left: 8px;
+    display: flex;
+    content: url('img/Прямоугольник_7.svg');
+
+}
+
+.button-b6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #fc635e;
+    color: #f2f2f2;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    width: 167px;
+    height: 44px;
+    background-color: #fc635e;
+    transition: 0.3s linear;
+}
+
+.button-b6:hover {
+    color: #fc635e;
+    background: white;
+}
+
+.laptop {
+    margin-right: 42px;
+}
+
+.slider-b6 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+@media (max-width: 1000px) {
+    .main-content-b6 {
+        flex-direction: column;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .laptop {
+        padding: 0 15px;
+        justify-content: center;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .laptop img {
+
+        max-width: 503px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .block6 {
+        height: 100%;
+    }
+
+    .slider-b6 {
+        bottom: 10px;
+    }
+
+    .button-b6 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .devices {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .landing-pages {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .landing-pages::before {
+        display: none;
+    }
+
+    .adversting::after {
+        display: none;
+    }
+
+    .marketing-kit::before {
+        display: none !important;
+    }
+
+    .text-b5 {
+        text-align: left;
+    }
+
+    .text-button-b5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-b5 {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-content-b5 {
+        margin-top: 0;
+    }
+
+    .slider-b5 {
+        bottom: 0;
+    }
+
+    .laptop {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-button-b6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-b6 {
+        margin: 20px auto;
+    }
+
+    .text-b6 {
+        text-align: left;
+    }
+
+    .main-content-b6 {
+        margin-top: 0;
+    }
+
+    .slider-b6 {
+        bottom: 0;
+    }
+
+    .book {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-button-b7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content-b7 {
+        margin-top: 0;
+    }
+
+    .slider-b7 {
+        bottom: 0;
+    }
+}
+
+.main-content-b7 {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.block7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+    height: 576px;
+    background-color: #f2f2f2;
+}
+
+.text-b7 {
+    max-width: 396px;
+    color: #9e9898;
+    font-family: "PF Encore Sans Pro - Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+}
+
+.marketing-kit {
+    display: flex;
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+    align-items: end;
+}
+
+.marketing-kit::before {
+    width: 10px;
+    height: 35px;
+    margin-right: 8px;
+    display: flex;
+    content: url('img/Прямоугольник_7.svg');
+
+}
+
+.button-b7 {
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 1px solid #fc635e;
+    color: #f2f2f2;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    width: 167px;
+    height: 44px;
+    background-color: #fc635e;
+    transition: 0.3s linear;
+}
+
+.button-b7:hover {
+    color: #fc635e;
+    background: white;
+}
+
+.book {
+    padding: 0 15px;
+    margin-left: 42px;
+}
+
+.slider-b7 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+@media (max-width: 1000px) {
+    .main-content-b7 {
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .book {
+        padding: 0 15px;
+        justify-content: center;
+        object-fit: cover;
+        width: 100%;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .book img {
+
+        max-width: 503px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .block7 {
+        height: 100%;
+    }
+
+    .slider-b7 {
+        bottom: 0;
+    }
+
+    .button-b7 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .book {
+        width: 100%;
+    }
+}
+
+.block8-portfolio {
+    padding: 0 15px;
+    position: relative;
+}
+
+.main-portfolio {
+
+    margin-top: 60px;
+    position: relative;
+    color: #868686;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-portfolio:after {
+    max-width: 142px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-menu {
+    position: relative;
+    margin: 63px auto;
+    max-width: 958px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.main-menu:before {
+    max-width: 958px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: 45px;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.main-menu:after {
+    max-width: 958px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -15px;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.menu-port {
+    cursor: pointer;
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro Light", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slash {
+    color: #747474;
+    font-style: normal;
+    letter-spacing: -0.1px;
+    line-height: normal;
+    margin-left: 45px;
+}
+
+.image-name {
+    padding-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+
+    height: 21px;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro Bold", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.plus {
+
+    top: 20%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 46px;
+    height: 44px;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro", sans-serif;
+    font-size: 104px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 135.76px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.bike::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;;
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.bike:hover .image-name {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.bike:hover .plus {
+    transition: 0.3s linear !important;
+    position: absolute;
+    opacity: 1;
+    z-index: 3;
+}
+
+.bike:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.paints::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.paints:hover .image-name {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.paints:hover .plus {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.paints:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.bus::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.bus:hover .image-name {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.bus:hover .plus {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.bus:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.letters::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.letters:hover .image-name {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.letters:hover .plus {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.letters:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.boxes::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.boxes:hover .image-name {
+    position: absolute;
+    opacity: 1;
+    z-index: 3;
+}
+
+.boxes:hover .plus {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.boxes:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.cars::after {
+    position: absolute;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: #fc635e;
+    transition: 0.3s linear !important;
+}
+
+.cars:hover .image-name {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.cars:hover .plus {
+    position: absolute;
+    transition: 0.3s linear !important;
+    opacity: 1;
+    z-index: 3;
+}
+
+.cars:hover::after {
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.bike {
+    position: relative;
+    grid-area: bike;
+    display: flex;
+    flex-direction: column;
+}
+
+.paints {
+    position: relative;
+    grid-area: paints;
+    display: flex;
+    flex-direction: column;
+}
+
+.bus {
+    position: relative;
+    grid-area: bus;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    position: relative;
+    grid-area: boxes;
+    display: flex;
+    flex-direction: column;
+}
+
+.letters {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-area: letters;
+}
+
+.cars {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-area: cars;
+}
+
+.images-port {
+    grid-gap: 18px;
+    justify-content: space-between;
+    max-width: 938px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    'bike bike paints bus'
+    'boxes letters cars cars';
+}
+
+.button-port {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 59px auto;
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro Light", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: center;
+    width: 192px;
+    height: 51px;
+    background-color: #fc635e;
+    border-radius: 6px;
+    border: 1px solid #fc635e;
+    transition: 0.3s linear;
+}
+
+.button-port:hover {
+    cursor: pointer;
+    color: #fc635e;
+    background: white;
+}
+
+.slider-b8 {
+    left: 50%;
+    padding-bottom: 10px;
+    transform: translateX(-50%);
+    bottom: -50px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+@media (max-width: 970px) {
+    .menu-port {
+        padding-right: 10px;
+        max-width: 800px;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .images-port {
+
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+        grid-auto-rows: 238px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+    'bike bike paints'
+    'bus boxes letters'
+    'cars cars -';
+    }
+
+    .port-items {
+        height: 100%;
+    }
+
+    .port-img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 850px) {
+    .images-port {
+        max-width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+    'bike bike'
+    'paints bus'
+    'boxes letters'
+    'cars cars ';
+    }
+}
+
+@media (max-width: 750px) {
+    .main-menu{
+     width: 100%;
+        justify-content: center;
+        gap:15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .main-menu{
+        gap:10px;
+    }
+    .menu-port {
+        width: 100%;
+        font-size: 14px;
+
+    }
+
+    .images-port {
+        width: 100%;
+        grid-template-columns:1fr;
+        grid-template-areas:
+    'bike'
+    'paints'
+    ' bus'
+    'boxes'
+    'letters'
+    'cars';
+    }
+
+    .port-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .port-items {
+        width: 100%;
+    }
+}
+
+.team-block {
+    position: relative;
+    padding: 0 15px;
+    height: 577px;
+    background-color: #f2f2f2;
+}
+
+.team-main {
+    margin-bottom: 86px;
+    padding-top: 50px;
+    position: relative;
+    color: #565656;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26.02px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.team-main span {
+    color: #fc635e;
+}
+
+.team-main:after {
+    max-width: 142px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #adadad;;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teammates {
+    display: flex;
+    gap: 105px;
+    margin: 0 auto;
+    max-width: 820px;
+}
+
+.bowman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tracy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.johns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 17px;
+}
+
+.slider-team {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url(img/slider2.png) no-repeat;
+}
+
+.worker {
+    color: #565656;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.worker span {
+    margin-right: 8px;
+    color: #fc635e;
+}
+
+.text-team {
+    margin-top: -20px;
+    font-family: "PF Encore Sans Pro - Thin", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.1px;
+}
+
+.links {
+    margin-top: -10px;
+}
+
+.twitter:hover {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: deepskyblue;
+    cursor: pointer;
+    transition: 0.3s linear !important;
+}
+
+.facebook:hover {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: deepskyblue;
+    cursor: pointer;
+    transition: 0.3s linear !important;
+}
+
+.linked:hover {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: deepskyblue;
+    cursor: pointer;
+    transition: 0.3s linear !important;
+}
+
+@media (max-width: 750px) {
+    .teammates {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-block {
+        height: 100%;
+    }
+
+    .johns {
+        margin-bottom: 70px;
+
+    }
+}
+
+@media (max-width: 550px) {
+    .teammates {
+        flex-wrap: wrap;
+    }
+
+    .team-block {
+        height: 100%;
+    }
+
+    .johns {
+        justify-content: start;
+
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+
+    .tracy {
+        margin-bottom: 50px;
+    }
+
+    .slider-team {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .teammates {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+}
+
+@media (max-width: 330px) {
+    .teammates {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .team-main {
+        margin-bottom: 20px;
+    }
+
+    .tracy {
+        padding-top: 25px;
+    }
+}
+
+.alan-block {
+    max-height: 645px;
+    padding: 0 15px;
+}
+
+.head-image-alan {
+    display: flex;
+    margin: 56px auto;
+}
+
+.alan-main-content {
+    align-items: center;
+    display: flex;
+    margin: 50px 145px 50px 0;
+    padding: 30px 0 20px 0;
+    justify-content: center;
+    gap: 70px;
+}
+
+.alan-text {
+    max-width: 323px;
+    color: #767676;
+    font-family: "PF Encore Sans Pro Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 21px;
+    text-align: right;
+}
+
+.arrows {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.richman {
+    color: #818181;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+
+    text-align: left;
+}
+
+.richman span {
+    color: #fc635e;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -0.14px;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.ceoromashka {
+    color: #818181;
+    font-family: "PF Encore Sans Pro Light", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 41px;
+    text-align: left;
+}
+
+@media (max-width: 850px) {
+    .alan-main-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin: 0 auto;
+    }
+}
+
+.gmap {
+    height: 458px;
+    position: relative;
+
+}
+
+.gmap-img {
+    object-fit: cover;
+    height: 100%;
+    margin-top: 165px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.text-logo-map {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    top: -81px;
+}
+
+.second-fon {
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.main-fon {
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 3;
+}
+
+.logo-name {
+
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro Medium", sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20.96px;
+    text-align: right;
+    z-index: 4;
+}
+
+.address {
+    max-width: 161px;
+
+
+    color: #ffffff;
+    font-family: "PF Encore Sans Pro Light", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20.96px;
+    text-align: left;
+    z-index: 4;
+}
+
+.footer-bg {
+    background: #181818;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.main-content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 253px;
+    line-height: 36px;
+    background-image: url(img/Слой_19.svg);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.footer-logo {
+    display: flex;
+    margin-top: 60px;
+    width: 180px;
+    height: 90px;
+    z-index: 2;
+}
+
+.footer {
+    flex-shrink: 0;
+
+}
+
+@media (max-width: 850px) {
+    .gmap {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 450px){
+    .gmap{
+        margin-top: 70px;
+    }
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
