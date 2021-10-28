@@ -24,15 +24,11 @@ list.forEach(function (item) {
         });
     }
 })
-function maxWidth()
-{
-    if ($(window).width()=== 920) {
-        console.log('123');
-    }
-}
+
+
 
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".slider-images").owlCarousel({
         items : 1,
         loop  : true,
         center: true,
@@ -44,6 +40,47 @@ $(document).ready(function () {
     ;
 
 
+});
+
+$(document).ready(function () {
+    $(".slider-services").owlCarousel({
+        items : 4,
+        responsiveClass:true,
+        // loop  : true,
+        nav: false,
+        dots:false,
+        responsive:{
+
+            0:{
+                items:1,
+                loop  : true,
+            },
+            500:{
+                loop  : true,
+                items:1,
+
+            },
+            600:{
+                loop  : true,
+                items:2,
+
+            },
+            750:{
+                loop  : true,
+                items:3,
+
+            },
+            920:{
+                loop  : true,
+                items:3,
+
+            },
+            1200:{
+                items:4,
+
+            }}
+    })
+    ;
 });
 
 // var list = document.querySelector(".main-menu"),

@@ -456,7 +456,7 @@ body {
     text-align: center;
 }
 
-.services-blocks {
+.services-blocks{
     max-width: 935px;
     margin: 0 auto;
     padding: 55px 0;
@@ -566,7 +566,7 @@ body {
 @media (max-width: 850px) {
     .services-blocks {
         display: flex;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
     }
 
     .clients-img {
@@ -2477,4 +2477,12 @@ ul {
     .button1::after{
         display: none;
     }
+}
+.slider-services{
+    max-width: 940px;
+    gap:20px;
+}
+.slider-services-img{
+    max-width: 101px;
+    max-height: 116px;
 }
