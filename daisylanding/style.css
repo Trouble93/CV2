@@ -686,7 +686,6 @@ body {
 }
 
 .business {
-    margin-left: 10px;
     display: flex;
     color: #ffffff;
     font-family: "PF Encore Sans Pro", sans-serif;
@@ -913,14 +912,14 @@ body {
     line-height: 26px;
     text-align: left;
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 23px;
 }
 
 .landing-pages::before {
     width: 10px;
     position: absolute;
     height: 35px;
-    right: 101%;
+    left: -6%;
     bottom: 0;
 
 
@@ -1071,7 +1070,7 @@ body {
     line-height: 26px;
     text-align: right;
     text-transform: uppercase;
-    margin-right: 15px;
+    margin-right: 23px;
 
 }
 
@@ -1081,7 +1080,7 @@ body {
     height: 35px;
     display: flex;
     content: url('img/Прямоугольник_7.svg');
-    right: -4%;
+    right: -6%;
     bottom: 0;
 }
 
@@ -1311,7 +1310,7 @@ body {
     line-height: 26px;
     text-align: left;
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 23px;
 }
 
 .marketing-kit::before {
@@ -1319,7 +1318,7 @@ body {
     position: absolute;
     height: 35px;
     margin-right: 8px;
-    right: 99%;
+    left: -6%;
     bottom: 0;
     content: url('img/Прямоугольник_7.svg');
 
@@ -1734,6 +1733,7 @@ body {
     grid-area: bike;
     display: flex;
     flex-direction: column;
+    transition: 0.3s linear;
 }
 
 .paints {
@@ -1741,6 +1741,7 @@ body {
     grid-area: paints;
     display: flex;
     flex-direction: column;
+    transition: 0.3s linear;
 }
 
 .bus {
@@ -1748,6 +1749,7 @@ body {
     grid-area: bus;
     display: flex;
     flex-direction: column;
+    transition: 0.3s linear;
 }
 
 .boxes {
@@ -1755,6 +1757,7 @@ body {
     grid-area: boxes;
     display: flex;
     flex-direction: column;
+    transition: 0.3s linear;
 }
 
 .letters {
@@ -1762,6 +1765,7 @@ body {
     display: flex;
     flex-direction: column;
     grid-area: letters;
+    transition: 0.3s linear;
 }
 
 .cars {
@@ -1769,6 +1773,7 @@ body {
     display: flex;
     flex-direction: column;
     grid-area: cars;
+    transition: 0.3s linear;
 }
 
 .images-port {
@@ -2368,4 +2373,108 @@ body {
 ul {
     margin: 0;
     padding: 0;
+}
+
+.d-none {
+    opacity: 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.image-item {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 969px;
+    display: flex;
+    height: 300px;
+
+}
+
+.block-width {
+    width: 323px;
+}
+
+.photo-item {
+    max-width: 160px;
+    max-height: 185px;
+    margin: 0 auto;
+}
+
+.slider-images .owl-nav button:hover {
+    background: none !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+
+    margin-left: 15px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 15px;
+}
+.alan-text{
+    text-align: left;
+}
+@media (max-width: 850px) {
+    .image-item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 10px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        margin-top: 30px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-top: 30px;
+    }
+
+    .ceoromashka {
+        display: flex;
+        justify-content: center;
+    }
+
+    .alan-text {
+        width: 323px;
+        text-align: left;
+    }
+    .richman{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1550px){
+    .button1::after{
+        left:58%
+    }
+}@media (max-width: 1330px){
+    .button1::after{
+        left:59%
+    }
+}
+@media (max-width: 1200px){
+    .button1::after{
+        left:60%
+    }
+}
+@media (max-width: 1050px){
+    .button1::after{
+        left:62%
+    }
+}
+@media (max-width: 900px){
+    .button1::after{
+        left:63%
+    }
+}
+@media (max-width: 850px){
+    .button1::after{
+        display: none;
+    }
 }

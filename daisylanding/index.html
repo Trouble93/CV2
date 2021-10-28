@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
 </head>
 <body>
 <header class="header container">
@@ -163,35 +165,41 @@
 <div class="block8-portfolio" id="portfolio">
     <h2 class="main-portfolio">Portfolio</h2>
     <ul class="main-menu">
-        <li class="menu-port portfolio-menu">All <span class="slash">/</span></li>
-        <li class="menu-port">Entertainment <span class="slash">/</span></li>
-        <li class="menu-port">Sport <span class="slash">/</span></li>
-        <li class="menu-port">Business <span class="slash">/</span></li>
-        <li class="menu-port">Building</li>
+        <li class="menu-port portfolio-menu" data-id="all">All <span class="slash">/</span></li>
+        <li class="menu-port" data-id="entertainment">Entertainment <span class="slash">/</span></li>
+        <li class="menu-port" data-id="sport">Sport <span class="slash">/</span></li>
+        <li class="menu-port" data-id="business">Business <span class="slash">/</span></li>
+        <li class="menu-port" data-id="building">Building</li>
     </ul>
 
     <div class="images-port">
-        <div class="bike port-items"><img class="port-img" src="img/bike.svg" alt="">
+        <div class="bike port-items sport all">
+            <img class="port-img" src="img/bike.svg" alt="">
             <span class="image-name">mountain bike</span>
             <span class="plus">+</span>
         </div>
-        <div class="paints port-items"><img class="port-img" src="img/paints.svg" alt="">
+        <div class="paints port-items business all">
+            <img class="port-img " src="img/paints.svg" alt="">
             <span class="image-name">paints</span>
             <span class="plus">+</span>
         </div>
-        <div class="bus port-items"><img class="port-img" src="img/bus.svg" alt="">
+        <div class="bus port-items business all">
+            <img class="port-img " src="img/bus.svg" alt="">
             <span class="image-name">bus</span>
             <span class="plus">+</span>
         </div>
-        <div class="boxes port-items"><img class="port-img" src="img/boxes.svg" alt="">
+        <div class="boxes port-items entertainment all">
+            <img class="port-img " src="img/boxes.svg" alt="">
             <span class="image-name">Boxes</span>
             <span class="plus">+</span>
         </div>
-        <div class="letters port-items"><img class="port-img" src="img/letters.svg" alt="">
+        <div class="letters port-items entertainment all">
+            <img class="port-img " src="img/letters.svg" alt="">
             <span class="image-name">letters</span>
             <span class="plus">+</span>
         </div>
-        <div class="cars port-items"><img class="port-img" src="img/cars.svg" alt="">
+        <div class="cars port-items building all">
+            <img class="port-img" src="img/cars.svg" alt="">
             <span class="image-name">cars</span>
             <span class="plus">+</span></div>
     </div>
@@ -235,23 +243,73 @@
     <a class="slider-team" href="#alan"></a>
 </div>
 <div class="alan-block" id="alan">
-    <img class="head-image-alan" src="img/4-layers (1).png" alt="">
-    <div class="alan-main-content">
-        <p class="alan-text">
-            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-            Aenean sollici-tudin, lorem quis bibendum auctor, nisi elit conse-
-        </p>
-        <img class="alan-photo" src="img/Слой_14.png" alt="">
-        <div class="alanrich">
-            <h2 class="richman"><span>Alan</span>Richman</h2>
-            <span class="ceoromashka">CEO of Romashka</span>
+       <img class="head-image-alan" src="img/4-layers (1).png" alt="">
+    <div class="slider-images owl-carousel owl-theme owl-loaded" >
+
+        <div class="image-item">
+            <div class="block-width">
+            <p class="alan-text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollici-tudin, lorem quis bibendum auctor, nisi elit conse-
+            </p>
+            </div>
+            <div class="block-width">
+                <img class="photo-item" src="img/Слой_14.png" alt="">
+            </div>
+            <div class="alanrich block-width">
+                <h2 class="richman"><span>Alan</span>Richman</h2>
+                <span class="ceoromashka">CEO of Romashka</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="block-width">
+                <p class="alan-text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollici-tudin, lorem quis bibendum auctor, nisi elit conse-
+            </p>
+            </div>
+            <div class="block-width">
+                <img class="photo-item"  src="img/Слой_12.png" alt="">
+            </div>
+            <div class="alanrich block-width">
+                <h2 class="richman"><span>Tomothy</span>Bowman</h2>
+                <span class="ceoromashka">Marketing</span>
+            </div>
+        </div>
+        <div class="image-item">
+            <div class="block-width">
+            <p class="alan-text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollici-tudin, lorem quis bibendum auctor, nisi elit conse-
+            </p>
+            </div>
+            <div class="block-width">
+                <img class="photo-item"  src="img/Слой_11.png" alt="">
+            </div>
+            <div class="alanrich block-width">
+                <h2 class="richman"><span>Steve</span>Tracy</h2>
+                <span class="ceoromashka">CEO</span>
+            </div>
+        </div>
+        <div class="image-item">
+           <div class="block-width">
+               <p class="alan-text">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollici-tudin, lorem quis bibendum auctor, nisi elit conse-
+            </p>
+           </div>
+            <div class="block-width">
+                <img class="photo-item"  src="img/Слой_13.png" alt="">
+            </div>
+            <div class="alanrich block-width">
+                <h2 class="richman"><span>Hellen</span>Johns</h2>
+                <span class="ceoromashka">Clients</span>
+            </div>
         </div>
     </div>
-    <div class="arrows">
-        <img src="img/Фигура_11_копия.svg" alt="">
-        <img src="img/Фигура_11.svg" alt="">
     </div>
-</div>
+
+
 <div class="gmap" id="contacts">
     <img class="gmap-img" src="img/Слой_15.svg" alt="">
     <div class="text-logo-map">
@@ -267,6 +325,8 @@
         <img class="footer-logo" src="img/4-layers.png" alt="">
     </div>
 </footer>
+<script src="jquery-3.6.0.js"></script>
+<script src="owl.carousel.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
